@@ -1,3 +1,3 @@
-export default function Product() {
-    return <h1>First blog post</h1>
+export default function Product({params}: {params: {id: string}}) {
+    return <h1>Product</h1>
 }
