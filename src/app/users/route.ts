@@ -3,5 +3,7 @@ export const users = [
     {id: 2, name: "Georgi Hristov"},
 ];
 
-export async function GET(){}
+export async function GET(){
+    return Response.json(users);
+}
 export async function POST(){}
