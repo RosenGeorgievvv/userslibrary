@@ -7,13 +7,13 @@ export const Navigation = () => {
     const pathname = usePathname();
   return (
     <nav>
-      <Link href="/" className="mr-4 text-blue-500">
+      <Link href="/" className={pathname === '/' ? "font-bold mr-4" : "text-blue-500 mr-4"}>
         Home
       </Link>
-      <Link href="/about" className="mr-4 text-blue-500">
+      <Link href="/about" className={pathname === '/about' ? "font-bold mr-4" : "text-blue-500 mr-4"}>
         About
       </Link>
-      <Link href="/product/1" className="mr-4 text-blue-500">
+      <Link href="/product/1" className={pathname === '/product/1' ? "font-bold mr-4" : "text-blue-500 mr-4"}>
         Product 1
       </Link>
     </nav>
